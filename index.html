@@ -16,44 +16,51 @@
 
   <div class="form-group">
   <form action="" id="form">
-    <input type="text" id="first-name" placeholder="name"/>
+    <div class="form-group">
+    
     <label class ="form-field" for="first-name">First name</label>
-  <input id="first-name" class ="form-field" type="text" placeholder="Fill your  first name here" >
+  <input id="first-name" class ="form-field" type="text" placeholder="Fill your  first name here" required>
 
   <label class ="form-field" for="last-name">Last name</label>
-  <input class ="form-field" type="text" placeholder="Fill your last name here" id="last-name">
+  <input class ="form-field" type="text" placeholder="Fill your last name here" id="last-name" required>
 
   <label class ="form-field" for="address">adress</label>
-<textarea class ="form-field" type="textarea" placeholder="Fill your adress here" id="address"></textarea>
+<textarea class ="form-field" type="textarea" placeholder="Fill your adress here" id="address" required></textarea>
 
 <label class ="form-field" for="pincode">pincode</label>
-<input class ="form-field" type="text" placeholder="your area pincode number" id="pincode">
+<input class ="form-field" type="text" placeholder="your area pincode number" id="pincode" required>
 
 <label class ="form-field" for="gender">Gender</label>
-<select class ="form-field" name="gender" id="gender">
-  <option value="">-Select Gender-</option>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-  <option value="Other">Other</option>
-</select>
 
-<label class ="form-field" for="food">Choice Of Food</label>
-<select class ="form-field" name="food" id="food">
-  <option value="">Choice Of Food</option>
-  <option value="Salad">Salad</option>
-  <option value="Sandwich">Sandwich</option>
-  <option value="Bread">Bread</option>
-  <option value="Male">Steak</option>
-  <option value="Fish">Fish</option>
-</select>
+<input type="radio" name="gender" value="Male" id="gender">
+<label for="gender">Male</label><br>
+<input type="radio" name="gender" value="Female" id="gender">
+<label for="gender">Female</label><br>
+<input type="radio" name="gender" value="Other" id="gender">
+<label for="gender">Other</label><br>
+
+<label class ="form-field" for="food">Choice Of Food</label><br>
+
+<input type="radio" name="food" value="Sandwich" id="food">
+<label for="food">Sandwich</label><br>
+<input type="radio" name="food" value="Salad" id="food" >
+<label for="food">Salad</label><br>
+<input type="radio" name="food" value="Bread" id="food">
+<label for="food">Bread</label><br>
+<input type="radio" name="food" value="Bread" id="food">
+<label for="food">Bread</label><br>
+<input type="radio" name="food" value="Bread" id="food">
+<label for="food">Bread</label><br>
+
 
 <label class ="form-field" for="state">State</label>
-<input class ="form-field" type="text" placeholder="Fill your state name here" id="result">
+<input class ="form-field" type="text" placeholder="Fill your state name here" id="state" required>
 
 <label class ="form-field" for="country">Country</label>
-<input class ="form-field" type="text" placeholder="fill your Country name here" id="result">
+<input class ="form-field" type="text" placeholder="fill your Country name here" id="country" required>
 
-<button class ="form-field" type="submit" id="submit">submit</button>
+<button class =" btn btn-primary" type="submit" id="submit">submit</button>
+</div>
 </form>
 </div>
 

@@ -4,16 +4,16 @@ var formSubmit=document.querySelector('#form')
 
 formSubmit.addEventListener('submit',(e) => {
 e.preventDefault()
-var firstName = document.querySelector('#firstName')
-var lastName = document.querySelector('#lastName')
-var adress = document.querySelector('#adress')
+var firstName = document.querySelector('#first-name')
+var lastName = document.querySelector('#last-name')
+var address = document.querySelector('#address')
 var pincode = document.querySelector('#pincode')
 var gender = document.querySelector('#gender')
 var food = document.querySelector('#food')
 var state = document.querySelector('#state')
 var country = document.querySelector('#country')
 
-var array = [firstName,lastName,adress,pincode,gender,food,state,country]
+var array = [firstName,lastName,address,pincode,gender,food,state,country]
 
 var tableRow = document.createElement('tr')
 var count = 0;
